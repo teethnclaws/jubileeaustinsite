@@ -1,0 +1,224 @@
+/* 07/03/2017, ran through a w3 CSS3 Validator: no errors or alerts */
+
+
+/************** BASE STYLES ******************/
+
+body {
+	/* defining the font for the overall page */
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#about, #work, #contact {
+	/* setting fixed heights for these sections */
+	height: 600px;
+}
+
+/************* GRID STYLING ******************/
+
+.full-width {
+	/* extending the full width of the webpage */
+	width: 1200px;
+	/* anything assigned a full-width has now been centered on the website with the vertical and horizontal values of 0 auto */
+	margin: 0 auto;
+}
+
+.half-width {
+	/* extending half the width of the webpage */
+	width: 600px; /* as this is half the full-width we assigned to the .full-width class */
+	float: left;
+}
+
+.third-width {
+	/* extending a third of the width of the webpage */
+	width: 400px; /* as this is a third of the overall 1200px width of the .full-width container */
+	float: left;
+}
+
+/************* HEADER STYLING ******************/
+
+header {
+	/* suggested height per the course instructions */
+	height: 800px;
+	/* playing around with image settings - as fixed center creates a parallax header.
+	While /img/her.png worked to generate my background image on Chrome, I had to add ../ 
+	in order to get the image to appear in ALL browers */
+	background: #EBEBEB url("../img/hero.png") no-repeat center; 
+	background-size: cover;
+}
+
+header h1 {
+	padding: 50px 0;
+	font-family: 'Lora', serif;
+	font-size: 30px;
+	color: #BBC085;
+}
+
+header h2 {
+	/* width: 90%; also gave a similar result */
+	width: 1000px;
+	/* clears out the floats, removing the white gap along the top of the header section */
+	clear: both;
+	font-family: 'Lora', serif;
+	font-size: 72PX;
+	line-height: 1;
+	color: #9B9B9B;
+	/* top and bottom, left and right padding */
+	padding: 20px 0;
+}
+
+header h2 span {
+	color: #2B2B2B;
+}
+
+
+/************* NAVIGATION STYLING ******************/
+
+nav {
+	float: right;
+	/* top and bottom, left and right */
+	padding: 75px 40px;
+}
+
+nav ul li {
+	/* from stacked to horizontal layout */
+	display: inline-block;
+}
+
+nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 18px; 
+	color: #828282;
+	/* creates padding between each of the navigation tabs */
+	padding-left: 80px;
+}
+
+
+
+/************ ABOUT Section ******************/
+
+#about .full-width {
+	/* This combination gives the .full-width some specific styling for the #about section only. For the full-width class for the #about section, give it 80px of padding on the top and bottom, and no padding on either side. */
+	padding: 80px 0;
+}
+
+#about h2 {
+	font-family: 'Lora', serif;
+	font-size: 36px;
+	color: #2B2B2B;
+}
+
+#about p {
+	font-size: 21px;
+	color: #7F7F7F;
+	line-height: 40px;
+	padding-right: 50px;
+}
+
+/************ WORK Section ******************/
+
+#work {
+	background-color: #F9CEB7;
+	text-align: center;
+}
+
+#work .full-width {
+	padding: 115px 0;
+}
+
+#work img {
+	padding-bottom: 30px;
+}
+
+#work h3 {
+	font-size: 24px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#work p {
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #2B2B2B;
+	padding: 0 35px; /* top & bottom, left & right */
+}
+
+/************ CONTACT Section ******************/
+
+#contact {
+	background-color: #EBEBEB;
+}
+
+#contact .full-width {
+	padding: 110px 0; /* padding top and bottom, left and right; a little bit of padding at the top of this section */
+}
+
+#contact-img {
+	border: 12px solid #FFFFFF;
+}
+
+#contact h2, #email-header, #socialmedia-header, #contact ul {
+	padding-left: 115px;
+}
+
+#envelope {
+	padding: 0 10px 0 115px;
+}
+
+#contact h2 {
+	font-family: 'Lora', serif;
+	font-size: 36px;
+	color: #2B2B2B;
+}
+
+#email-header {
+	font-size: 32px;
+	font-weight: 400;
+	margin: -30px 0 5px 0;
+	color: #2B2B2B;
+}
+
+#socialmedia-header {
+	font-weight: 700;
+	font-size: 29px;
+	margin: 40px 0 0 0;
+	color: #2B2B2B;
+}
+
+#contact a {
+	text-decoration: none;
+	color: #C49075;
+	font-weight: 700;
+	font-size: 28px;
+}
+
+/************ CONTACT Social Media Section ******************/
+
+#contact ul {
+	/* removes bullets */
+	list-style: none;
+}
+
+#contact ul li {
+	/* shifts the list items from vertical to horizontal */
+	display: inline-block;
+}
+
+#contact ul img {
+	/* creating some space between each of the social media icons */
+	padding-right: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

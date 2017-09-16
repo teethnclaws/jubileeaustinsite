@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jubilee Austin | Developer.</title>
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	
+	<!-- fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+
+	<!-- tested 07/03/2017 with w3 validator - no errors or alerts -->
+</head>
+	
+<body>
+	
+	<header>
+		<div class="full-width"><!-- start of full-width div class -->
+			<div class="half-width">
+				<h1>Jubilee Austen</h1>
+			</div>
+			<div class="half-width">
+				
+				<nav>
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- THIS h2 NEEDED to be placed within the full-width only, so it needed to be put here. Otherwise, it causes layout issues with the ABOUT section below -->
+			<h2><span>Hi,</span> I'm a developer that loves clean &amp; elegant code.</h2>
+		</div><!-- end of full-width div class  in header -->
+	</header>
+
+	<main><!-- remember you only use one main for each html page -->
+		<section id="about">
+			<div class="full-width">
+				<!-- there is some misleading visuals vs text explaining the placement of this h2 element in STEP 7 of 8 and 8 of 8 of setting up structure. Visual shows this h2 in the half-width, where as the written instructions later state it is to go directly below full-width -->
+				<h2>A little bit about me.</h2>
+					<div class="half-width">
+						<p>I've made my home base in Providence, Rhode Island with my small growing family. My journey into tech
+						started with a degree in journalism. As I started sharing my writing online, I was fascinated with how easily I could get my voice out there. I was hooked and wanted to learn how to build my own site to fit my own specific needs.</p>
+					</div>
+						
+					<div class="half-width">
+						<p>That curiosity then opened a door that could never be shut. When I learned how to build my first website,
+						I realized I found something that gave me the freedom &amp; versatility I was looking for in my work. Now I've
+						made a full switch to front-end development, where I can use my organization skills and eye for detail to write
+						clean, elegant code.</p>
+					</div>
+						
+			</div><!-- end of full-width div class in about section --> 
+		</section>
+		
+		<section id="work">
+			<div class="full-width">
+				<div class="third-width">
+				<!-- Files need to be structured in order to have images within said img folder so I can use a relative file path per the lesson instructions. Otherwise you have to move through to the root directory using "/" or "../" depending on the file placement -->
+					<img src="img/icon-html.png" alt="HTML icon"/>
+					<!-- had to add the break as nothing I did with the h3 width adjusted all three columns correctly -->
+					<h3>Hand-Coded <br>HTML</h3>
+					<p>My focus is writing clean, well-formatted, semantic HTML5 by hand to make sure that the content is easy to read,
+					easy to collaborate, trouble-shoot and accessible.</p>
+				</div><!-- end of third-width one -->
+				
+				<div class="third-width">
+					<img src="img/icon-css.png" alt="CSS icon"/>
+					<h3>Well-Organized CSS</h3>
+					<p>I pride myself on writing CSS that is easy to read and build on. I focus on keeping my CSS lean and fast to load,
+					and I make it a habit to stay up to date on current best practices.</p>
+				</div><!-- end of third-width two -->
+					
+				<div class="third-width">
+					<img src="img/icon-pencil.png" alt="Pencil icon"/>
+					<h3>Ease Converting Designs into Code</h3>
+					<p>You can trust me to take a designer's PSD and quickly &amp; accurately convert it into a webpage that is pixel-perfect match.</p>
+				</div><!-- end of third-width three -->
+				
+			</div><!-- end of full-width in work section, which has three third-width elements nested within -->
+		</section>
+		
+		<footer id="contact">
+			<div class="full-width">
+				<div class="half-width">
+					<img id="contact-img" src="img/contact.png" alt="My Contact Image"/>
+
+<p><!-- added validator emblem to show the cite cleared their review -->
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+				</div>
+				
+				<div class="half-width" id="contact-info">
+					<h2>Like what you see?</h2>
+					<h3 id="email-header">Let's meet for a cup of coffee.</h3>
+					<a href="mailto:hi@jubileeausten.com"><img id="envelope" src="img/icon-envelope.png" alt="envelope icon"/>hi [@] jubileeausten.com</a>
+					
+					<h3 id="socialmedia-header">Or, find me on the interwebs.</h3>
+						<ul>
+							<!-- social media images and links. I did not include my own for now. -->
+							<li><a href="https://twitter.com/" target="_blank"><img src="img/icon-twitter.png" alt="Twitter icon"/></a></li>
+							<li><a href="https://www.tumblr.com/" target="_blank"><img src="img/icon-tumblr.png" alt="Tumblr icon"/></a></li>
+							<li><a href="https://www.instagram.com/" target="_blank"><img src="img/icon-instagram.png" alt="Instagram icon"/></a></li>
+							<li><a href="https://www.linkedin.com/" target="_blank"><img src="img/icon-linkedin.png" alt="Linkedin icon"/></a></li>
+							<li><a href="https://github.com/" target="_blank"><img src="img/icon-github.png" alt="GitHub icon"/></a></li>
+						</ul>
+
+				</div>
+			</div><!-- end of full-width in contact section of footer which has two half-width divs nested within -->
+		</footer>
+		
+	</main>
+	
+</body>
+
+</html>
